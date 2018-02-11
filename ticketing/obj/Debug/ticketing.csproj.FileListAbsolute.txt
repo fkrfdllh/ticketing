@@ -1,0 +1,12 @@
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\bin\Debug\ticketing.exe.config
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\bin\Debug\ticketing.exe
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\bin\Debug\ticketing.pdb
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\bin\Debug\MySql.Data.dll
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.formAdmin.resources
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.Properties.Resources.resources
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.formRegister.resources
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.formSignIn.resources
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.csproj.GenerateResource.Cache
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.exe
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.pdb
+C:\Users\fkrfdllh\Documents\vsProject\ticketing\ticketing\obj\Debug\ticketing.csprojResolveAssemblyReference.cache
