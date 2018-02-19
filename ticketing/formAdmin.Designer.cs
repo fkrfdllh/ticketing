@@ -48,35 +48,35 @@
             this.idTransportation = new System.Windows.Forms.Label();
             this.dgTransportation = new System.Windows.Forms.DataGridView();
             this.pnlRute = new System.Windows.Forms.Panel();
-            this.dgRute = new System.Windows.Forms.DataGridView();
-            this.txtSearchRute = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbTransportation = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDepartAt = new System.Windows.Forms.TextBox();
-            this.txtRuteFrom = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtRuteTo = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.NumericUpDown();
-            this.idTransportationRute = new System.Windows.Forms.Label();
-            this.idRute = new System.Windows.Forms.Label();
             this.btnRefreshRute = new System.Windows.Forms.Button();
             this.btnDeleteRute = new System.Windows.Forms.Button();
             this.btnUpdateRute = new System.Windows.Forms.Button();
             this.btnCreateRute = new System.Windows.Forms.Button();
+            this.idRute = new System.Windows.Forms.Label();
+            this.idTransportationRute = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtRuteTo = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtRuteFrom = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDepartAt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbTransportation = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSearchRute = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgRute = new System.Windows.Forms.DataGridView();
             this.msAdmin.SuspendLayout();
             this.pnlTransportation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeatQtyTransportation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgTransportation)).BeginInit();
             this.pnlRute.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRute)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgRute)).BeginInit();
             this.SuspendLayout();
             // 
             // msAdmin
@@ -102,14 +102,14 @@
             // transportaionToolStripMenuItem
             // 
             this.transportaionToolStripMenuItem.Name = "transportaionToolStripMenuItem";
-            this.transportaionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.transportaionToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.transportaionToolStripMenuItem.Text = "Transportaion";
             this.transportaionToolStripMenuItem.Click += new System.EventHandler(this.transportaionToolStripMenuItem_Click);
             // 
             // ruteToolStripMenuItem
             // 
             this.ruteToolStripMenuItem.Name = "ruteToolStripMenuItem";
-            this.ruteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ruteToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.ruteToolStripMenuItem.Text = "Route";
             this.ruteToolStripMenuItem.Click += new System.EventHandler(this.ruteToolStripMenuItem_Click);
             // 
@@ -335,33 +335,8 @@
             this.pnlRute.Name = "pnlRute";
             this.pnlRute.Size = new System.Drawing.Size(459, 334);
             this.pnlRute.TabIndex = 2;
+            this.pnlRute.Visible = false;
             this.pnlRute.Click += new System.EventHandler(this.pnlRute_Click);
-            // 
-            // dgRute
-            // 
-            this.dgRute.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRute.Location = new System.Drawing.Point(3, 3);
-            this.dgRute.Name = "dgRute";
-            this.dgRute.Size = new System.Drawing.Size(453, 150);
-            this.dgRute.TabIndex = 0;
-            this.dgRute.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRute_CellClick);
-            // 
-            // txtSearchRute
-            // 
-            this.txtSearchRute.Location = new System.Drawing.Point(356, 158);
-            this.txtSearchRute.Name = "txtSearchRute";
-            this.txtSearchRute.Size = new System.Drawing.Size(100, 20);
-            this.txtSearchRute.TabIndex = 5;
-            this.txtSearchRute.TextChanged += new System.EventHandler(this.txtSearchRute_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(309, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Search";
             // 
             // groupBox2
             // 
@@ -386,118 +361,6 @@
             this.groupBox2.Size = new System.Drawing.Size(453, 146);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Transportation Name";
-            // 
-            // cbTransportation
-            // 
-            this.cbTransportation.FormattingEnabled = true;
-            this.cbTransportation.Location = new System.Drawing.Point(12, 33);
-            this.cbTransportation.Name = "cbTransportation";
-            this.cbTransportation.Size = new System.Drawing.Size(121, 21);
-            this.cbTransportation.TabIndex = 1;
-            this.cbTransportation.TextChanged += new System.EventHandler(this.cbTransportation_TextChanged);
-            this.cbTransportation.Click += new System.EventHandler(this.cbTransportation_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 68);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Depart At";
-            // 
-            // txtDepartAt
-            // 
-            this.txtDepartAt.Location = new System.Drawing.Point(12, 85);
-            this.txtDepartAt.Name = "txtDepartAt";
-            this.txtDepartAt.Size = new System.Drawing.Size(121, 20);
-            this.txtDepartAt.TabIndex = 3;
-            // 
-            // txtRuteFrom
-            // 
-            this.txtRuteFrom.Location = new System.Drawing.Point(164, 33);
-            this.txtRuteFrom.Name = "txtRuteFrom";
-            this.txtRuteFrom.Size = new System.Drawing.Size(121, 20);
-            this.txtRuteFrom.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(161, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Route From";
-            // 
-            // txtRuteTo
-            // 
-            this.txtRuteTo.Location = new System.Drawing.Point(164, 85);
-            this.txtRuteTo.Name = "txtRuteTo";
-            this.txtRuteTo.Size = new System.Drawing.Size(121, 20);
-            this.txtRuteTo.TabIndex = 7;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(161, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 13);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Route To";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(306, 16);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Price";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Increment = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.txtPrice.Location = new System.Drawing.Point(309, 34);
-            this.txtPrice.Maximum = new decimal(new int[] {
-            -727379969,
-            232,
-            0,
-            0});
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(120, 20);
-            this.txtPrice.TabIndex = 9;
-            this.txtPrice.ThousandsSeparator = true;
-            // 
-            // idTransportationRute
-            // 
-            this.idTransportationRute.AutoSize = true;
-            this.idTransportationRute.Location = new System.Drawing.Point(133, 16);
-            this.idTransportationRute.Name = "idTransportationRute";
-            this.idTransportationRute.Size = new System.Drawing.Size(0, 13);
-            this.idTransportationRute.TabIndex = 10;
-            this.idTransportationRute.Visible = false;
-            // 
-            // idRute
-            // 
-            this.idRute.AutoSize = true;
-            this.idRute.Location = new System.Drawing.Point(429, 127);
-            this.idRute.Name = "idRute";
-            this.idRute.Size = new System.Drawing.Size(0, 13);
-            this.idRute.TabIndex = 11;
-            this.idRute.Visible = false;
             // 
             // btnRefreshRute
             // 
@@ -539,6 +402,144 @@
             this.btnCreateRute.UseVisualStyleBackColor = true;
             this.btnCreateRute.Click += new System.EventHandler(this.btnCreateRute_Click);
             // 
+            // idRute
+            // 
+            this.idRute.AutoSize = true;
+            this.idRute.Location = new System.Drawing.Point(429, 127);
+            this.idRute.Name = "idRute";
+            this.idRute.Size = new System.Drawing.Size(0, 13);
+            this.idRute.TabIndex = 11;
+            this.idRute.Visible = false;
+            // 
+            // idTransportationRute
+            // 
+            this.idTransportationRute.AutoSize = true;
+            this.idTransportationRute.Location = new System.Drawing.Point(133, 16);
+            this.idTransportationRute.Name = "idTransportationRute";
+            this.idTransportationRute.Size = new System.Drawing.Size(0, 13);
+            this.idTransportationRute.TabIndex = 10;
+            this.idTransportationRute.Visible = false;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txtPrice.Location = new System.Drawing.Point(309, 34);
+            this.txtPrice.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(120, 20);
+            this.txtPrice.TabIndex = 9;
+            this.txtPrice.ThousandsSeparator = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(306, 16);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Price";
+            // 
+            // txtRuteTo
+            // 
+            this.txtRuteTo.Location = new System.Drawing.Point(164, 85);
+            this.txtRuteTo.Name = "txtRuteTo";
+            this.txtRuteTo.Size = new System.Drawing.Size(121, 20);
+            this.txtRuteTo.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(161, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 13);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Route To";
+            // 
+            // txtRuteFrom
+            // 
+            this.txtRuteFrom.Location = new System.Drawing.Point(164, 33);
+            this.txtRuteFrom.Name = "txtRuteFrom";
+            this.txtRuteFrom.Size = new System.Drawing.Size(121, 20);
+            this.txtRuteFrom.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(161, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Route From";
+            // 
+            // txtDepartAt
+            // 
+            this.txtDepartAt.Location = new System.Drawing.Point(12, 85);
+            this.txtDepartAt.Name = "txtDepartAt";
+            this.txtDepartAt.Size = new System.Drawing.Size(121, 20);
+            this.txtDepartAt.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 68);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Depart At";
+            // 
+            // cbTransportation
+            // 
+            this.cbTransportation.FormattingEnabled = true;
+            this.cbTransportation.Location = new System.Drawing.Point(12, 33);
+            this.cbTransportation.Name = "cbTransportation";
+            this.cbTransportation.Size = new System.Drawing.Size(121, 21);
+            this.cbTransportation.TabIndex = 1;
+            this.cbTransportation.TextChanged += new System.EventHandler(this.cbTransportation_TextChanged);
+            this.cbTransportation.Click += new System.EventHandler(this.cbTransportation_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Transportation Name";
+            // 
+            // txtSearchRute
+            // 
+            this.txtSearchRute.Location = new System.Drawing.Point(356, 158);
+            this.txtSearchRute.Name = "txtSearchRute";
+            this.txtSearchRute.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchRute.TabIndex = 5;
+            this.txtSearchRute.TextChanged += new System.EventHandler(this.txtSearchRute_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(309, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Search";
+            // 
+            // dgRute
+            // 
+            this.dgRute.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgRute.Location = new System.Drawing.Point(3, 3);
+            this.dgRute.Name = "dgRute";
+            this.dgRute.Size = new System.Drawing.Size(453, 150);
+            this.dgRute.TabIndex = 0;
+            this.dgRute.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgRute_CellClick);
+            // 
             // formAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,10 +562,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgTransportation)).EndInit();
             this.pnlRute.ResumeLayout(false);
             this.pnlRute.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgRute)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgRute)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

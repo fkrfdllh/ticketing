@@ -73,7 +73,9 @@ namespace ticketing {
             } else {
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read()) {
+                    cbTransportationType.Refresh();
                     cbTransportationType.Items.Add(reader.GetString("description"));
+                    cbTransportationType.Update();
                 }
                 conn.Close();
             }
@@ -94,7 +96,9 @@ namespace ticketing {
             } else {
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read()) {
+                    cbTransportation.BeginUpdate();
                     cbTransportation.Items.Add(reader.GetString("description"));
+                    cbTransportation.EndUpdate();
                 }
                 conn.Close();
             }
@@ -380,9 +384,11 @@ namespace ticketing {
 
         private void btnCreateTransportation_Click(object sender, EventArgs e) {
             createTransportation();
+            Application.Restart();
         }
 
         private void cbTransportationType_TextChanged(object sender, EventArgs e) {
+            conn.Close();
             conn.Open();
 
             cmd = conn.CreateCommand();
@@ -422,10 +428,12 @@ namespace ticketing {
 
         private void btnUpdateTransportation_Click(object sender, EventArgs e) {
             updateTransportation();
+            Application.Restart();
         }
 
         private void btnDeleteTransportation_Click(object sender, EventArgs e) {
             deleteTransportation();
+            Application.Restart();
         }
 
         private void ruteToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -476,14 +484,17 @@ namespace ticketing {
 
         private void btnCreateRute_Click(object sender, EventArgs e) {
             createRute();
+            Application.Restart();
         }
 
         private void btnUpdateRute_Click(object sender, EventArgs e) {
             updateRute();
+            Application.Restart();
         }
 
         private void btnDeleteRute_Click(object sender, EventArgs e) {
             deleteRute();
+            Application.Restart();
         }
 
         private void btnRefreshRute_Click(object sender, EventArgs e) {

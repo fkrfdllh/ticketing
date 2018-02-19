@@ -202,16 +202,18 @@ namespace ticketing {
                                 if (reader.Read()) {
                                     string role = reader["level"].ToString();
                                     string fullName = reader["fullname"].ToString();
+                                    string idCustomer = reader["id"].ToString();
 
                                     this.Hide();
 
-                                    if (role == "Customer") {
-                                        MessageBox.Show("You're Customer!");
+                                    conn.Close();
 
-                                        conn.Close();
+                                    if (role == "Customer") { 
+                                        formCustomer customer = new formCustomer();
+                                        customer.Text = "Hello, " + fullName + "!";
+                                        customer.Controls["pnlReservation"].Controls["groupBox2"].Controls["idUser"].Text = idCustomer;
+                                        customer.Show();
                                     } else if (role == "Admin") {
-                                        conn.Close();
-
                                         formAdmin admin = new formAdmin();
                                         admin.Text = "Welcome, " + fullName + "!";
                                         admin.Show();
